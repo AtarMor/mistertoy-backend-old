@@ -1,0 +1,49 @@
+[
+  {
+    "name": "Talking doll",
+    "price": 200,
+    "labels": [
+      "Art",
+      "Baby"
+    ],
+    "inStock": true,
+    "created": 1710791911475,
+    "_id": "JHUco"
+  },
+  {
+    "name": "Teddy bear",
+    "price": 400,
+    "labels": [
+      "Battery Powered",
+      "Box game"
+    ],
+    "inStock": true,
+    "created": 1709482930746,
+    "_id": "gnMEj"
+  },
+  {
+    "_id": "PCaN7a",
+    "name": "Barbie",
+    "price": 18,
+    "labels": [
+      "On wheels",
+      "Outdoor",
+      "Battery Powered",
+      "Box game"
+    ],
+    "created": 1705088321329,
+    "inStock": true
+  },
+  {
+    "_id": "Dt94xO",
+    "name": "Lego",
+    "price": 27,
+    "labels": [
+      "Art",
+      "Doll",
+      "Baby"
+    ],
+    "created": 1709030649359,
+    "inStock": false
+  }
+]
