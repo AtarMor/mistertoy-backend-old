@@ -26,14 +26,15 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('/api/toy', (req, res) => {
+    console.log('params', req.query.params);
     const filterBy = {
-        txt: req.query.txt || '',
-        maxPrice: +req.query.maxPrice || 0,
-        inStock: req.query.inStock || 'all'
+        txt: req.query.params.txt || '',
+        maxPrice: +req.query.params.maxPrice || 0,
+        inStock: req.query.params.inStock || 'all'
     }
     const sortBy = {
-        type: req.query.type || 'created',
-        dir: req.query.dir || -1
+        type: req.query.params.type || 'created',
+        dir: req.query.params.dir || -1
     }
 
     toyService.query(filterBy, sortBy)

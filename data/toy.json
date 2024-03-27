@@ -1,5 +1,13 @@
 [
   {
+    "name": "toy",
+    "price": 100,
+    "labels": [],
+    "inStock": true,
+    "createdAt": 1711547588231,
+    "_id": "bWzXB"
+  },
+  {
     "name": "Talking doll",
     "price": 200,
     "labels": [
@@ -12,7 +20,7 @@
   },
   {
     "name": "Teddy bear",
-    "price": 400,
+    "price": 40,
     "labels": [
       "Battery Powered",
       "Box game"
@@ -20,6 +28,18 @@
     "inStock": true,
     "created": 1709482930746,
     "_id": "gnMEj"
+  },
+  {
+    "_id": "Dt94xO",
+    "name": "Lego",
+    "price": 27,
+    "labels": [
+      "Art",
+      "Doll",
+      "Baby"
+    ],
+    "created": 1709030649359,
+    "inStock": false
   },
   {
     "_id": "PCaN7a",
@@ -33,17 +53,5 @@
     ],
     "created": 1705088321329,
     "inStock": true
-  },
-  {
-    "_id": "Dt94xO",
-    "name": "Lego",
-    "price": 27,
-    "labels": [
-      "Art",
-      "Doll",
-      "Baby"
-    ],
-    "created": 1709030649359,
-    "inStock": false
   }
 ]
