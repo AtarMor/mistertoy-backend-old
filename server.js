@@ -26,17 +26,8 @@ if (process.env.NODE_ENV === 'production') {
 }
 
 app.get('/api/toy', (req, res) => {
-    console.log('params', req.query.params);
-    const filterBy = {
-        txt: req.query.params.txt || '',
-        maxPrice: +req.query.params.maxPrice || 0,
-        inStock: req.query.params.inStock || 'all'
-    }
-    const sortBy = {
-        type: req.query.params.type || 'created',
-        dir: req.query.params.dir || -1
-    }
-
+    const { filterBy, sortBy }  =  req.query.params
+      
     toyService.query(filterBy, sortBy)
         .then(toys => {
             res.send(toys)

@@ -11,6 +11,7 @@ export const toyService = {
 }
 
 function query(filterBy, sortBy) {
+    console.log(sortBy);
     let filteredToys = toys
 
     if (filterBy.txt) {
@@ -24,9 +25,9 @@ function query(filterBy, sortBy) {
         filteredToys = filteredToys.filter(toy => (filterBy.inStock === 'inStock' ? toy.inStock : !toy.inStock))
     }
 
-    if (sortBy.type === 'name') filteredToys.sort((toy1, toy2) => (toy1.name.localeCompare(toy2.name)) * sortBy.dir)
-    if (sortBy.type === 'price') filteredToys.sort((toy1, toy2) => (toy1.price - toy2.price) * sortBy.dir)
-    if (sortBy.type === 'created') filteredToys.sort((toy1, toy2) => (toy1.created - toy2.created) * sortBy.dir)
+    if (sortBy.name) toys.sort((toy1, toy2) => (toy1.name.localeCompare(toy2.name)) * sortBy.name)
+    if (sortBy.price) toys.sort((toy1, toy2) => (toy1.price - toy2.price) * sortBy.price)
+    if (sortBy.created) toys.sort((toy1, toy2) => (toy1.created - toy2.created) * sortBy.created)
 
     return Promise.resolve(filteredToys)
 }
